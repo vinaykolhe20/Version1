@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+* body
+{
+    background-color: whitesmoke;
+    justify-content: center;
+    
+}
+.title
+{
+    color: white;
+    padding-left: 70px;
+    padding-top: 4px;
+    padding-right: 200px;
+}
+.header
+{
+    background-color: #334a48;
+    height: 60px;
+    
+    flex-direction: row;
+   
+    color: white;
+}
+.image-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 130px ;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.workout-row
+{
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.image
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image:hover{
+    opacity: 0.8;
+}
+
+.name
+{
+    text-align: center;
+    height: 20px;
+    
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27,.5);
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form
+{
+    margin-top: 60px;
+    margin-left: 100px;
+
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.login-button
+{
+   
+        background-color: rgb(39, 38, 36);
+        color: white;
+        height: 33px;
+        width: 80px;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 0px;
+        margin: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        margin-top: 14px;
+        
+   
+}
+.login-button:hover
+{
+    box-shadow: 1px 2px 6px rgb(104, 104, 129) ;
+}
+.register-button
+{
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 15px;
+}
+.crud
+{
+    background-color: black;
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="module2.css">
+    <script>
+    setInterval(updateTime, 1000);
+    function updateTime()
+    {
+        time.innerHTML=new Date();
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>TRACKER</h1>
+        <button onclick="location.href='SearchMembr.html'">Search Member</button>
+        <button onclick="location.href='MemReport.jsp'">All Members</button>
+        <button onclick="location.href='UpdateSubs.html'">Update Subscription</button>
+        <button onclick="location.href='CheckExpiry.html'">Check Subscription</button>
+        <button onclick="location.href='DeleteMem.html'">Delete Member</button>
+    </header>
+    <div class="content">
+    <span id="time"></span>
+    <form action="Add" method="post">
+        <table>
+           <tr>
+            <td>Member Number</td>
+            <td><input type="number" name="memno"></td>
+           </tr>
+
+           <tr>
+            <td>Member Name</td>
+            <td><input type="text" name="memnm"></td>
+           </tr>
+
+           <tr>
+            <td>Age</td>
+            <td><input type="number" name="age"></td>
+           </tr>
+
+           <tr>
+            <td>Weight</td>
+            <td><input type="number" name="weight"></td>
+           </tr>
+
+           <tr>
+            <td>Gender</td>
+            <td><input type="text" name="gender"></td>
+           </tr>
+
+           <tr>
+            <td>Mobile Number</td>
+            <td><input type="text" name="mobno"></td>
+           </tr>
+
+           <tr>
+            <td>City</td>
+            <td><input type="text" name="city"></td>
+           </tr>
+
+             <tr>
+              <td>Subscribtion Ending Date</td>
+              <td><input type="date" name="upto"></td>
+            </tr>
+        </table>
+        <input type="submit" name="Submit"  class="submit-button">
+    </form>
+    </div>
+        
+
+ 
+  
+    
+        
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

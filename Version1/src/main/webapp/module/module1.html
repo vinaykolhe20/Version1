@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="module.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>TRACKER</h1>
+        <button class="button" onclick="location.href='SearchMembr.html'">Search Member</button>
+                            <button class="button" onclick="location.href='MemReport.jsp'">All Members</button>
+                            <button class="button" onclick="location.href='UpdateSubs.html'">Update Subscription</button>
+                            <button class="button" onclick="location.href='CheckExpiry.html'">Check Subscription</button>
+                            <button class="button" onclick="location.href='DeleteMem.html'">Delete Member</button>
+    </header>
+    <section class="form">
+        <form action="Add" method="post">
+            <table>
+               <tr>
+                <td>Member Number</td>
+                <td><input type="number" name="memno"></td>
+               </tr>
+
+               <tr>
+                <td>Member Name</td>
+                <td><input type="text" name="memnm"></td>
+               </tr>
+
+               <tr>
+                <td>Age</td>
+                <td><input type="number" name="age"></td>
+               </tr>
+
+               <tr>
+                <td>Weight</td>
+                <td><input type="number" name="weight"></td>
+               </tr>
+
+               <tr>
+                <td>Gender</td>
+                <td><input type="text" name="gender"></td>
+               </tr>
+
+               <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobno"></td>
+               </tr>
+
+               <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+               </tr>
+
+	 			<tr>
+	              <td>Subscribtion Ending Date</td>
+	              <td><input type="date" name="upto"></td>
+	            </tr>
+	               
+               <tr>
+                <td><input type="submit" name="Submit"  class="submit-button"></td>
+               
+               </tr>
+
+              
+               
+            </table>
+            
+        </form>
+       
+    <div class="content">
+hello
+    </div>
+    <footer>
+       <a href="https://www.linkedin.com/feed/"><img src="linkden.png" class="linkden"></a>
+       <img src="naukri.png" class="naukri">
+    </footer>
+</body>
+</html>

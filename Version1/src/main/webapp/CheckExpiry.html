@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.button
+{
+    background-color: rgb(10, 139, 244);
+        color: white;
+        height: 33px;
+        width: 200px;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 0px;
+        margin: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+} 
+.button:hover
+    {
+        box-shadow: 1px 2px 6px rgb(9, 9, 21) ;
+    }
+</style>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<button class="button" onclick="location.href='SearchMembr.html'">Search Member</button>
+  <form action="Expiry.jsp" method="post">
+    Date
+    <td><input type="date" name="upto"></td>
+    <td><input type="submit" value="Search" ></td>
+  </form>
+
+  <br>
+    <a href="index.html">Home</a>
+    <button class="button" onclick="location.href='SearchMembr.html'">Search Member</button>
+</body>
+</html>

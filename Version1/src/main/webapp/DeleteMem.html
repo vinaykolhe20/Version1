@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.crud
+{
+    margin-left: 120px;
+    background-color: lightgoldenrodyellow;
+
+}   
+.button
+{
+        background-color: lightcoral;
+        color: white;
+        height: 33px;
+        width: 200px;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 0px;
+        margin: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+} 
+.button:hover
+    {
+        box-shadow: 1px 2px 6px rgb(9, 9, 21) ;
+    }
+.title
+{
+    color: white;
+    padding-left: 70px;
+    padding-top: 4px;
+    padding-right: 210px;
+}
+.header-buttons
+{
+
+    margin-top: 5px;
+} 
+.container
+{
+    background-color: burlywood;
+    border: 2px solid grey;
+    width: 100%;
+}
+.Delete
+{
+    margin-left: 300px;
+    margin-top: 200px;
+    background-color: aquamarine;
+    width: 350px;
+    
+} 
+.del-but
+{
+    background-color: #e60404; 
+       height: 35px;
+       width: 120px;
+       color: white;
+       border: none;
+       border-radius: 6px;
+       cursor:pointer
+       
+}
+.del-but:hover
+{
+    opacity: 0.8;
+}  
+</style>
+</style>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Tracker</h1>
+  <div class="header-buttons">    
+        <button class="button" onclick="location.href='SearchMembr.html'">Search Member</button>
+
+
+
+        <button class="button" onclick="location.href='MemReport.jsp'">All Members</button>
+        
+        
+       
+        <button class="button" onclick="location.href='UpdateSubs.html'">Update Subscription</button>
+        
+       
+        <button class="button" onclick="location.href='CheckExpiry.html'">Check Subscription Expiry</button>
+
+        <button class="button" onclick="location.href='DeleteMem.html'">Delete Member</button>
+    </div> 
+    </header>
+    <div class="Delete">
+    <form action="DelMembr" method="post">
+
+
+        <table>
+            <tr>
+                <td>Name of Member</td>
+                <td><input type="text" name="memnm" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Delete Member" class="del-but"></td>
+                <td></td>
+                
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

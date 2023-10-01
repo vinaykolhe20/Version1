@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.crud
+{
+    margin-left: 120px;
+    background-color: lightgoldenrodyellow;
+
+}   
+.button
+{
+        background-color: rgb(101, 14, 14);
+        color: white;
+        height: 33px;
+        width: 200px;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 0px;
+        margin: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+} 
+.button:hover
+    {
+        box-shadow: 1px 2px 6px rgb(9, 9, 21) ;
+    }
+.title
+{
+    color: white;
+    padding-left: 70px;
+    padding-top: 4px;
+    padding-right: 210px;
+    width: 100px;
+}
+
+.header-buttons
+{
+
+    margin-top: 5px;
+    display: flex;
+} 
+.container
+{
+    background-color: burlywood;
+    border: 2px solid grey;
+    width: 100%;
+}   
+
+</style>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+            <header class="header">
+                <h1 class="title">Tracker</h1>
+                    <div class="header-buttons">    
+                            <button class="button" onclick="location.href='SearchMembr.html'">Search Member</button>
+                            <button class="button" onclick="location.href='MemReport.jsp'">All Members</button>
+                            <button class="button" onclick="location.href='UpdateSubs.html'">Update Subscription</button>
+                            <button class="button" onclick="location.href='CheckExpiry.html'">Check Subscription Expiry</button>
+                            <button class="button" onclick="location.href='DeleteMem.html'">Delete Member</button>
+                    </div> 
+            </header>
+    
+      <div class="container">
+            <span id="time"></span>
+
+      </div>
+      <script>
+        setInterval(updateTime, 1000);
+        function updateTime()
+        {
+            time.innerHTML=new Date();
+        }
+      </script>
+ <section class="form">
+        <form action="Add" method="post">
+            <table>
+               <tr>
+                <td>Member Number</td>
+                <td><input type="number" name="memno"></td>
+               </tr>
+
+               <tr>
+                <td>Member Name</td>
+                <td><input type="text" name="memnm"></td>
+               </tr>
+
+               <tr>
+                <td>Age</td>
+                <td><input type="number" name="age"></td>
+               </tr>
+
+               <tr>
+                <td>Weight</td>
+                <td><input type="number" name="weight"></td>
+               </tr>
+
+               <tr>
+                <td>Gender</td>
+                <td><input type="text" name="gender"></td>
+               </tr>
+
+               <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobno"></td>
+               </tr>
+
+               <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+               </tr>
+
+	 			<tr>
+	              <td>Subscribtion Ending Date</td>
+	              <td><input type="date" name="upto"></td>
+	            </tr>
+	               
+               <tr>
+                <td><input type="submit" name="Submit" class="btn btn-primary"></td>
+                <td></td>
+               </tr>
+
+              
+               
+            </table>
+            
+        </form>
+    </section>
+    <br></br>
+    
+</body>
+</html>

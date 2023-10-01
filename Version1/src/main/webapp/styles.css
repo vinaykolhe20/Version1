@@ -1,0 +1,15 @@
+
+
+#box1
+{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+#box2
+{
+    height: 50px;
+    width: 50%;
+    background-color: lightgreen;
+    margin-left: 10px;
+}
